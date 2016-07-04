@@ -1,19 +1,21 @@
 *{border:0; margin: 0; padding:0}
 body{background-color: #f5f5f3;}
 .wrapper { width: 850px; margin: 0 auto; background-image: url(../img/wrapper_bg.png);background-repeat: no-repeat;}
-.header { overflow: hidden; padding-bottom: 39px}
-.title {width: 186px; height:53px; display: block; position: relative; float:left; margin-top:58px;}
+.header { overflow: hidden; padding-bottom: 39px; padding-top: 58px;}
+.title {width: 186px; height:53px; float:left;}
 .title a {display:block; height: 100%; background-image: url(../img/title.png);background-repeat: no-repeat; }
-.navigation {display: block; position:relative; float:right; padding-top: 80px}
-.navigation a { font-size: 20px;  font-family: "vijaya";  color: rgb(161, 161, 161);  text-decoration: underline;  text-align:center;}
-.navigation_list li {display: inline; padding-left: 30px}
+.navigation {float:right; padding-top: 0px;}
+.navigation a { font-size: 20px;  font-family: vijaya, serif;  color: rgb(161, 161, 161);  text-decoration: underline;  text-align:center;}
+.navigation_list {display: table;}
+.navigation_list li {display: table-cell; height: 53px; padding-left: 30px; vertical-align: middle;}
+.navigation_list li:first-of-type {padding-left: 0;}
 a:link {text-decoration: none}
 a:hover {text-decoration: underline}
 a:active{color: rgb(89, 89, 89);text-decoration: underline}
 .big_img {width:850;height: 282px}
 .wrapper_img {position:absolute; width: 820px; height:252px; border:15px solid rgba( 255, 255, 255, 0.65); border-radius: 15px; box-shadow:0 3px 8px rgba(3, 3, 3, 0.15);background-image: url(../img/shine.png);}
 .img_txt {background-image: url(../img/bg_txt.png); width:790px;height: 54px; margin-left: 15px; margin-top: 180px;z-index: 3;}
-.img_txt p  {font-family: verdana; font-size: 12px; color: #f6f6f4; padding-left: 118px; padding-top: 20px}
+.img_txt p  {font-family: verdana, geneva, sans-serif; font-size: 12px; color: #f6f6f4; padding-left: 118px; padding-top: 20px}
 .main_img {width: 820px; height: 252px; padding-left: 15px;padding-top: 15px}
 .select {padding: 15px 145px 32px 115px; overflow: hidden; }
 #arrow_left {width: 27px; height: 23px; float:left; margin-top: 36px; ; background-image: url(../img/arrow_left.png);}
@@ -23,24 +25,21 @@ a:active{color: rgb(89, 89, 89);text-decoration: underline}
 .small_img_wrapper:first-child {margin-left: 0}
 #arrow_right {float: right; width: 27px; height: 23px; margin-top: 36px; background-image: url(../img/arrow_right.png)}
 #arrow_right a {display: block; height: 23px}
-.main_txt {text-align: center; font-family: "Vijaya"; font-size: 28px; color:rgb(131, 131, 131); border-top: 1px dashed #d2d2d1; border-bottom: 1px dashed #d2d2d1; padding-top: 35px;padding-bottom: 29px}
+.main_txt {text-align: center; font-family: vijaya, serif; font-size: 28px; color:rgb(131, 131, 131); border-top: 1px dashed #d2d2d1; border-bottom: 1px dashed #d2d2d1; padding-top: 35px;padding-bottom: 29px}
 .columns {border-bottom: 1px dashed #d2d2d1; padding-top: 23px; padding-bottom: 23px; overflow: auto;}
-.column_header {height:40px; width: 197px;background-image: url(../img/heart.png); background-repeat: no-repeat;}
-.column_title {width: 156px; padding-left: 50px}
-h2 { font-weight: normal; float: left; font-family: "Vijaya"; font-size: 24px; color: #505050;padding-top: 4px}
-h5 { font-weight: normal; float: left; font-family: "Verdana"; font-size: 11px; color: #908f8f;margin-top: -4px}
-.lorem{padding-left: 23px; padding-right: 23px; margin-top: 25px; font-family: "Verdana"; font-size: 12px; color: #908f8f; line-height: 24px }
+.column_header {height:40px;background-image: url(../img/heart.png); background-repeat: no-repeat; padding-left: 50px}
+h2 { font-weight: normal; float: left; font-family: Vijaya, serif; font-size: 24px; color: #505050;padding-top: 4px}
+h5 { font-weight: normal; float: left; font-family: verdana, geneva, sans-serif; font-size: 11px; color: #908f8f;margin-top: -4px}
+.lorem{padding-left: 23px; padding-right: 23px; margin-top: 25px; font-family: verdana, geneva, sans-serif; font-size: 12px; color: #908f8f; line-height: 24px }
 .first_column { width: 290px;float:left; text-align: left;}
 .first_column .lorem {padding-left: 0}
 .second_column { width: 313px;float:left; border-left: 1px dashed #d2d2d1; border-right: 1px dashed #d2d2d1; padding-bottom: 20px}
 .second_column .column_header {background-image: url(../img/screen_off.png); margin-left: 23px}
 .third_column {width: 243px; float:left;}
-.third_column .column_header {background-image: url(../img/newspaper.png); margin-left: 23px;width: 220px}
-.third_column .column_title {width: 170px;padding-top: 5px}
-h3 {font-weight: normal; float: left; font-family: "Vijaya"; font-size: 24px; color: #908f8f;}
+.third_column .column_header {background-image: url(../img/newspaper.png); margin-left: 23px;padding-top: 5px;}
+h3 {font-weight: normal; float: left; font-family: vijaya, serif; font-size: 24px; color: #908f8f;}
 ul {float:left; margin-left: 23px; list-style: none;}
-.third_column li {font-family: "Verdana"; font-size: 11px; color: #505050; padding-left: 70px; padding-top: 13px;padding-bottom: 25px}
-.third_column li:first-child{}
+.third_column li {font-family: verdana, geneva, sans-serif; font-size: 11px; color: #505050; padding-left: 70px; padding-top: 13px;padding-bottom: 25px}
 .first {padding:0; margin-top: 40px}
 li p {font-size: 10px; font-style: italic; color: #908f8f}
 .list {float: left; width:245px; margin-top: 15px}
@@ -49,17 +48,16 @@ ul div {height: 62px; background-repeat: no-repeat;}
 #second_line {background-image:url(../img/2d_line.png); background-repeat: no-repeat;}
 #third_line {background-image:url(../img/3d_line.png); background-repeat: no-repeat;}
 #fourth_line {background-image:url(../img/1st_line.png); background-repeat: no-repeat;}
-.back {background-color:#dddddd; width:850px; margin-top:30px; border-radius:10px; box-shadow: inset 0 0 3px 2px #bebebe; overflow: hidden;}
-p.twitter_txt + p {float:right; font-family:"verdana"; font-size:11px; color: #505050; margin-top:20px; padding-right:15px }
-.twitter_txt {float:left; font-family:"verdana"; font-size:14px; color: #908f8f; padding-top:19px;padding-bottom:19px; padding-left: 75px; background-image: url(../img/twitter_bird.png);background-repeat: no-repeat; background-position: 10px center;  }
+.twitter {background-color:#dddddd; width:850px; margin-top:30px; border-radius:10px; box-shadow: inset 0 0 3px 2px #bebebe; overflow: hidden;}
+p.twitter_txt + p {float:right; font-family: verdana, geneva, sans-serif; font-size:11px; color: #505050; margin-top:20px; padding-right:15px }
+.twitter_txt {float:left; font-family: verdana, geneva, sans-serif; font-size:14px; color: #908f8f; padding-top:19px;padding-bottom:19px; padding-left: 75px; background-image: url(../img/twitter_bird.png);background-repeat: no-repeat; background-position: 10px center;  }
 .twitter_txt b {color: #505050}
-#twitter_bird {float:left; margin-top: 13px; margin-left:11px;}
-.footer{width:850px; overflow: hidden; padding-bottom: 25px}
-div.footer p {font-family:"verdana"; font-size:10px; color:#505050; float:right; margin-top:35px}
-p span { font-family:"verdana"; font-size:10px; color:#8b8b8b}
+.footer{width:850px; overflow: hidden; padding:25px 0; display: table;}
+.footer p {font-family: verdana, geneva, sans-serif; font-size:10px; color:#505050; float:right;}
+p span { font-family: verdana, geneva, sans-serif; font-size:10px; color:#8b8b8b}
 #twitter_link {width: 32px; height: 32px; background-image: url(../img/twitter.png); float: left;}
 #rss_link {width: 32px; height: 32px; background-image: url(../img/rss.png); float: left;}
-.footer_links { float: left; padding-top: 28px; margin-left: -4px}
+.footer_links { float: left; margin-left: -4px}
 .footer_links a {display: block; height: 32px}
-.blbl {display: block;position: relative;float: left;}
+.copyright {display: table-cell; height: 32px; vertical-align: middle;}
 
